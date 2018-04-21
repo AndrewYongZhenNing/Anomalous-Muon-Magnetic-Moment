@@ -385,8 +385,7 @@ We will begin by collecting the tools necessary for lattice QCD. First, we need 
 
 \noindent where we have used the following convention\cite{sm},
 
-\begin{equation}
-\begin{split}
+\begin{align*}
 Q_L^i&=\begin{pmatrix}
 \begin{pmatrix}
 u\\d
@@ -398,8 +397,8 @@ t\\b
 \end{pmatrix},\\
 u^i_R&=(u_R	,c_R,t_R),\\
 d^i_R&=(d_R,s_R,b_R),
-\end{split}
-\end{equation}
+\tag{\refstepcounter{equation}\theequation}
+\end{align*}
 
 %\noindent to indicate that the left-handed quarks transform as a doublet and the right-handed quarks transform as a singlet under SU(2)$_\mathrm{L}$. The covariant derivative, $D_\mu$, contains gauge fields which can be rearranged to give charged, neutral and electromagnetic interaction terms. 
 
@@ -504,27 +503,24 @@ G(t) = \int d^3x \, \langle J_z(t,\vec{x})J_z^\dag(0)\rangle,
 \Pi_{zz}(\omega,k^i=0) &=\left(0 - \omega^2 - 0 \right)\Pi(\omega,k^i=0),\\
 \Pi_{zz}(\omega) &= -\omega^2\Pi(\omega).
 \end{split}
+\label{pi zz}
 \end{equation}
 
-\noindent From Equation \ref{G and Pi}, we see that 
+\noindent Comparing Equation \ref{pi zz} and \ref{G and Pi}, we see that 
 
 \begin{equation}
-\begin{split}
-\Pi_{zz}(\omega,k^i=0)&= \int dt \, G(t) e^{i\omega t},\\
--\omega^2\Pi(\omega^2)&= \int dt \, G(t) e^{i\omega t},\\
-\Pi(\omega^2)&= -\frac{1}{\omega^2}\int dt \, G(t) e^{i\omega t}.
-\end{split}
+\Pi(\omega^2)= -\frac{1}{\omega^2}\int dt \, G(t) e^{i\omega t}.
+\label{hvp - correlator}
 \end{equation}
 
 We are interested in the infrared regime, where conventional lattice calculations face difficulties. Expanding the exponential as a power series, we have
 
-\begin{equation}
-\begin{split}
+\begin{align*}
 \Pi(\omega^2)&= \frac{-1}{\omega^2}\int dt \, G(t) \sum_{n=0}^\infty \frac{(i\omega t)^n}{n!},\\
 &= \frac{-1}{\omega^2}\int dt \, G(t) \left(1 +i\omega t+\frac{1}{2!}(i\omega t)^2 + \mathcal{O}(\omega^2) \right),\\
 &= \frac{-1}{\omega^2} \left(\int dt \, G(t) + i\omega \int dt \, G(t)t-\frac{1}{2!}\omega^2 \int dt \, G(t)t^2 + \mathcal{O}(\omega^2) \right).
-\end{split}
-\end{equation}
+\tag{\refstepcounter{equation}\theequation}
+\end{align*}
 
 \noindent We note that the first integral on the final line vanishes as we can identify it as the quark number susceptibility of the vacuum. For the term linear in $t$, we note that $G(t)$ is an even function, so the integral of $G(t)$ with $t$ - an odd function - across the boundaries therefore also vanishes. Keeping the first term, the subtracted vacuum polarisation function is thus
 
@@ -562,18 +558,9 @@ a_\mu^\mathrm{HVP}&= \left(\frac{\alpha}{\pi}\right)^2  \int_0^\infty dt\, \tild
 
 In order to evaluate $a_\mu^\mathrm{HVP}$, we need the correct expression for $\tilde{K}(t;m_\mu)$. For the remainder of this subsection, we will refer to the derivation in \cite{dellamorte} for an expression that can be used on the lattice. Further, we will use $\tilde{K}(t;m_\mu)$ and $\tilde{f}(t)$ interchangeably and similarly for $K(\omega^2;m_\mu^2)$ and $f(\omega^2)$. 
 
-First, we can simplify $\tilde{K}(t;m_\mu)$ a little more,
-
-\begin{equation}
-\begin{split}
-d\omega^2 &= \omega \, d\omega ,\\
-\Rightarrow \tilde{K}(t;m_\mu) &= 8\pi^2 \int_0^\infty \frac{d\omega}{\omega} \, K(\omega^2;m_\mu^2) \,\left( \omega^2t^2-4\,\sin^2\, \frac{1}{2}\omega t \right).
-\end{split}
-\end{equation}
-
 Since $a_\mu^\mathrm{HVP}$  is a dimensionless unit, we can deduce that the mass dimensions of $\tilde{f}(t)$ is -2 since the integral measure $dt$ has mass dimensions -1 and the $G(t)$ term has 4 copies of Dirac fermions integrated over 3-space, giving mass dimensions $\frac{3}{2}\cdot 4 - 3 = 3$. Therefore, $m_\mu^2 \tilde{f}(t)$ would make a dimensionless function of $m_\mu t$. For the moment, we will set $m_\mu$ to unity. Once we obtain an expression for $\tilde{f}(t)$ we will restore the appropriate factors by dimensional analysis.
 
-The function $f(\omega^2)$, which is really $K(\omega^2;m_\mu^2)$ in disguise, has the following form 
+First, we note that $d\omega^2=2\omega d\omega$. The function $f(\omega^2)$, which is really $K(\omega^2;m_\mu^2)$ in disguise, then has the following form 
 
 \begin{equation}
 f(\omega^2) = \frac{1}{\omega\sqrt{\omega^2 + 4}} - 1 + \frac{\omega}{2}(\sqrt{\omega^2 + 4} - \omega),
@@ -621,14 +608,11 @@ Consider the $\tilde{g}_\epsilon(t)$ piece. When expanded out, it reads
 %\end{equation}
 
 \begin{equation}
-\begin{split}
-\tilde{g}_\epsilon(t) &= \int^\infty_0 \frac{d\omega}{\sqrt{\omega^2+\epsilon^2}}\, \left( \frac{1}{\sqrt{\omega^2+\epsilon^2}\sqrt{\omega^2+\epsilon^2+4}} - 1 \frac{\sqrt{\omega^2+\epsilon^2}}{2}(\sqrt{\omega^2+\epsilon^2+4} - \sqrt{\omega^2+\epsilon^2}) \right) \, \cos\omega t,\\
-&= \int^\infty_0 d\omega\, \frac{\cos\omega t}{(\omega^2+\epsilon^2)\sqrt{\omega^2+4}} - \frac{\cos \omega t}{\sqrt{\omega^2+\epsilon^2}} + (\sqrt{\omega^2+4} - \sqrt{\omega^2+\epsilon^2}) \, \frac{\cos \omega t}{2},
-\end{split}
+\tilde{g}_\epsilon(t) = \int^\infty_0 d\omega\, \frac{\cos\omega t}{(\omega^2+\epsilon^2)\sqrt{\omega^2+4}} - \frac{\cos \omega t}{\sqrt{\omega^2+\epsilon^2}} + (\sqrt{\omega^2+4} - \sqrt{\omega^2+\epsilon^2}) \, \frac{\cos \omega t}{2},
 \label{g_epsilon}
 \end{equation}
 
-\noindent where in going to the second line, we remove some infrared regulators as they are no longer needed to make the integral convergent. Let's focus on the first term in the integrand, that is
+Let's focus on the first term in the integrand, that is
 
 \begin{equation}
 I(t) = \int^\infty_0 d\omega\, \frac{\cos \omega t}{(\omega^2+\epsilon^2)\sqrt{\omega^2+4}}.
@@ -670,7 +654,7 @@ K_0(t) = \int^\infty_1 du \, \frac{e^{-ut}}{\sqrt{u^2-1}}.
 I_p(t) = \int^\infty_0 \, du \, e^{-ut} \tilde{I}(u),
 \end{equation}
 
-\noindent and match $\tilde{I}(u)$ with the right hand side. Doing so, we find that
+\noindent and match $\tilde{I}(u)$ with $-K_0(2t)$. Doing so, we find that
 
 \begin{equation}
 I_p''(t) - \epsilon^2 I_p(t) = (u^2-\epsilon^2)\int^\infty_0 \, du \, e^{-ut} \tilde{I}(u).
@@ -717,14 +701,16 @@ I_\epsilon(t) = \frac{\pi}{4}(\frac{1}{\epsilon}-t) + I_p(t) +\mathcal{O}(\epsil
 
 \noindent which can be verified by substituting into Eqution \ref{diff eq I}.
 
-Now, consider the second integrand in Equation \ref{g_epsilon}, that is
+Now, consider the second integrand in Equation \ref{g_epsilon}. For later use, we note one of the useful forms of the $n$'th modified Bessel function of the second kind \cite{bessel},
 
-\begin{equation}
-\int^\infty_0 d\omega\, \frac{\cos \, \omega t}{\sqrt{\omega^2+\epsilon^2}}.
-\label{second term}
-\end{equation}
+%, that is
+%
+%\begin{equation}
+%\int^\infty_0 d\omega\, \frac{\cos \, \omega t}{\sqrt{\omega^2+\epsilon^2}}.
+%\label{second term}
+%\end{equation}
 
-For later use, we note one of the useful forms of the $n$'th modified Bessel function of the second kind \cite{bessel},
+
 
 \begin{equation}
 K_n(t) = \frac{\Gamma(n+\frac{1}{2})(2t)^n}{\sqrt{\pi}}\int^\infty_0 d\omega \, \frac{\mathrm{cos \,} \omega}{(t^2 + \omega^2)^{n+\frac{1}{2}}},
@@ -737,7 +723,7 @@ K_n(t) = \frac{\Gamma(n+\frac{1}{2})(2t)^n}{\sqrt{\pi}}\int^\infty_0 d\omega \, 
 \Gamma(n)\Gamma(1-n) = \frac{\pi}{\sin n\pi}.
 \end{equation}
 
-Comparing Equation \ref{second term} with \ref{Kn}, we identify that $K_0(t)$ is needed. Under the rescaling $\omega \rightarrow \omega\epsilon$, Equation \ref{second term} matches with $K_0(\epsilon t)$ as
+Comparing the second term of $g_\epsilon$ with \ref{Kn}, we identify that $K_0(t)$ is needed. Under the rescaling $\omega \rightarrow \omega\epsilon$, we have
 
 \begin{equation}
 \begin{split}
@@ -746,16 +732,9 @@ Comparing Equation \ref{second term} with \ref{Kn}, we identify that $K_0(t)$ is
 \end{split}
 \end{equation}
 
-\noindent after $K_0(\epsilon t)$ undergoes $\omega \rightarrow \omega t$ to restore the correct argument in the cosine and to simultaneously remove the $t^2$ factor in the denominator.
+\noindent after $K_0(\epsilon t)$ undergoes $\omega \rightarrow \omega t$ in Equation \ref{Kn} to restore the correct argument in the cosine and to simultaneously remove the $t^2$ factor in the denominator.
 
-We obtain the third term in a similar fashion. Note that this integral will be convergent in the long wavelength limit, where $\omega\rightarrow 0$, so we can safely set the infrared regulator, $\epsilon$, to zero:
-
-\begin{equation}
-\int^\infty_0 \frac{d\omega}{2}\, \left(\sqrt{\omega^2 + 4} - \omega\,\right)\, \cos \, \omega t
-\label{third term}
-\end{equation}
-
-We begin by identifying the $n=1$ version of Equation \ref{Kn}:
+We obtain the third term in a similar fashion. Note that this integral will be convergent in the long wavelength limit, where $\omega\rightarrow 0$, so we can safely set the infrared regulator, $\epsilon$, to zero. We begin by identifying the $n=1$ version of Equation \ref{Kn}:
 
 \begin{equation}
 \begin{split}
@@ -768,7 +747,7 @@ K_1(2t) &=\frac{2}{t} \int^\infty_0 d\omega\,
 \label{K1}
 \end{equation}
 
-\noindent where we have used the fact that  $\Gamma(\frac{3}{2})=\frac{\sqrt{\pi}}{2}$. To match Equation \ref{third term} with \ref{K1}, we need to integrate by parts twice,
+\noindent where we have used the fact that  $\Gamma(\frac{3}{2})=\frac{\sqrt{\pi}}{2}$. To match with the third term in Equation \ref{g_epsilon}, we need to integrate $K_1(2t)$ by parts twice,
 
 %\begin{equation}
 %\begin{split}
@@ -790,7 +769,7 @@ K_1(2t) &=\frac{2}{t} \int^\infty_0 d\omega\,
 \end{align*}
 
 
-\noindent where in the first line, the integrated term vanish at both limits and in the second line, the integrated term vanishes as $\omega\rightarrow \infty$ but leaves a factor of $1/2t^2$ at $\omega=0$. Thus, we can write Equation \ref{third term} in terms of $K_1(2t)$:
+\noindent where in the first line, the integrated term vanish at both limits and in the second line, the integrated term vanishes as $\omega\rightarrow \infty$ but leaves a factor of $1/2t^2$ at $\omega=0$. Thus, we can write the third term in Equation \ref{g_epsilon} in terms of $K_1(2t)$:
 
 \begin{equation}
 \int^\infty_0 \frac{d\omega}{2}\, \left(\sqrt{\omega^2 + 4} - \omega\,\right)\, \cos \, \omega t  = \,\frac{1}{2t^2}( 1 - 2tK_1(2t)\,).
@@ -905,7 +884,7 @@ Now we can focus on the final term on the r.h.s of Equation \ref{ftilde}. It inv
 \label{lim 3}
 \end{equation}
 
-\noindent The key observation to tackling this term is that the derivative of the modified Bessel functions of the second kind have simple expressions. Using \textit{Mathematica}, they are:
+\noindent The key observation to tackling this term is that the derivative of the modified Bessel functions of the second kind have simple expressions. Using \textit{Mathematica}, we note that they are:
 
 \begin{equation}
 \begin{split}
@@ -952,14 +931,14 @@ At last, we can combine Equation \ref{lim 11}, \ref{lim 21} and \ref{lim 32} to 
 \end{split}
 \end{equation}
 
-Recall that before we began deriving this expression, we set the muon mass to unity. We must take extra care now that we are restoring the units, since the r.h.s contains $t$ terms, which have mass dimensions -1. Since we claimed in the above that $\tilde{f}(t)$ has mass dimensions -2, an immediate corollary is that $m_\mu^2\tilde{f}(t)$ would be a dimensionless function of variable $\hat{t}=m_\mu t$. Restoring the proper units, we finally have
+Recall that before we began deriving this expression, we set the muon mass to unity. We must take extra care now that we are restoring the units, since the r.h.s contains $t$ terms, which have mass dimensions -1. In the above, we claimed that $\tilde{f}(t)$ has mass dimensions -2, so an immediate corollary is that $m_\mu^2\tilde{f}(t)$ would be a dimensionless function of variable $\hat{t}=m_\mu t$. Restoring the proper units, we finally have
 
 \begin{equation}
 \tilde{f}(t)= \frac{2\pi^2}{m_\mu^2}(8\log \hat{t} - 2\pi \hat{t} + 8I_p(\hat{t}) + \frac{4}{\hat{t}^2} - \frac{8}{\hat{t}}K_1(2\hat{t}) - 8\gamma - 2 - \hat{t}^2).
 \label{ftilde final}
 \end{equation}
 
-Thus, we now have an explicit expression for the kernel function, $\tilde{K}(t;m_\mu)$ from Equation \ref{amu}. In principle, we can now calculate \amu due to the hadronic vacuum polarisation, one contribution for each quark flavour. However, as noted in \cite{dellamorte}, due to the finite nature of the time direction on the lattice, the difficulty in this approach arises as the Euclidean correlator, $G(t)$, is integrated to infinite time. Della Morte \textit{et al.} propose various solutions to this problem. It begins by first splitting the Euclidean correlator into two parts
+Thus, we now have an explicit expression for the kernel function, $\tilde{K}(t;m_\mu)$ from Equation \ref{amu}. In principle, we can now compute the hadronic vacuum polarisation, one contribution for each quark flavour. However, as noted in \cite{dellamorte}, due to the finite nature of the time direction on the lattice, the difficulty in this approach arises as the Euclidean correlator, $G(t)$, is integrated to infinite time. Della Morte \textit{et al.} propose various solutions to this problem. It begins by first splitting the Euclidean correlator into two parts
 
 \begin{equation}
 G(t)=
@@ -994,72 +973,57 @@ P(x)[m/n] = \frac{\sum_{i=0}^ma_ix^i}{1+\sum_{j=1}^nb_jx^j},
 \label{pade}
 \end{equation}
 
-\noindent where $m,n\in \mathbb{Z}$. If the original function $f(x)$ is known, then the coefficients, $a_i$ and $b_j$ can be determined with successive derivatives of $f(x)$ evaluated at the origin. Naturally, the Pad\'{e} approximant with increasing order in $m$ and $n$ will yield increasingly better approximations of the original function.
+\noindent where $m,n\in \mathbb{Z}$. If the original function $f(x)$ is known, then the coefficients, $a_i$ and $b_j$ can be determined with successive derivatives of $f(x)$ evaluated at the origin. Naturally, the Pad\'{e} approximant with increasing order in $m$ and $n$ will yield better approximations of the original function.
 
-Back to evaluating the hadronic vacuum polarisation contribution to $a_\mu$, we recall that the exact shape of the vacuum polarisation function, $\Pi(Q^2)$, and its additive renormalisation, $\Pi(0)$, is difficult to determine to the demanded accuracy in the infrared regime, corresponding to $Q^2 \approx 0.01\mathrm{GeV}^2$\cite{dellamorte}. As an alternate method to the time-momentum representation, Della Morte \textit{et al.}\cite{dellamorte} proposes that we replace the vacuum polarisation function, $\Pi(\omega^2)$ in Equation \ref{amu} with its Pad\'{e} approximant. So, we write
+Back to evaluating the hadronic vacuum polarisation , we recall that the exact shape of the vacuum polarisation function, $\Pi(Q^2)$, and its additive renormalisation, $\Pi(0)$, are difficult to determine accurately in the infrared regime, corresponding to $Q^2 \approx 0.01\mathrm{GeV}^2$\cite{dellamorte}. As an alternate method to the time-momentum representation, Della Morte \textit{et al.}\cite{dellamorte} proposes that we replace the vacuum polarisation function, $\Pi(\omega^2)$ in Equation \ref{amu} with its Pad\'{e} approximant. So, we write
 
 \begin{equation}
 \Pi(\omega^2)[m/n] = \frac{\sum_{i=0}^ma_i\omega^{2i}}{1+\sum_{j=1}^nb_j\omega^{2j}}.
 \end{equation}
 
-The next task is to determine the exact value of these expansion coefficients. To that end, Della Morte \textit{et al.} proposes two methods that are currently used in research:
+The next task is to determine the exact value of these expansion coefficients. To that end, we will follow a method proposed by Della Morte \textit{et al.}: tosubstitute time moments in place of the coefficients $a_i$ and $b_j$.
 
-\begin{enumerate}
-\item determine $a_j$ and $b_j$ from vacuum polarisation function fits obtained from simulations,
-\item or subtituting time moments in place of the coefficients $a_i$ and $b_j$.
-\end{enumerate}
-
-In this section, we will explore the second option. As in \S \ref{tmr}, this will be based on the paper by Della Morte \cite{dellamorte}. 
-
-For convenience, we restate a couple of the results we had from the beginning paragraphs of \S\ref{hvp}. We recall the the quark polarisation tensor is the Fourier transform of the vector correlator,
-
-\begin{equation}
-\Pi_{\mu\nu}(Q) = \int d^4x \, e^{iQx} \langle J_\mu(x) J_\nu(0) \rangle.
-\end{equation}
-
-\noindent Due to Lorentz and O(4) invariance\cite{vector}, the tensor structure of $\Pi_{\mu\nu}(Q)$ has the form 
+For convenience, we recall that, due to Lorentz and O(4) invariance\cite{vector}, the tensor structure of $\Pi_{\mu\nu}(Q)$ has the form 
 
 \begin{equation}
 \Pi_{\mu\nu}(Q) = \left( Q_\mu Q_\nu - \delta_{\mu\nu} Q^2 \right)\Pi(Q^2).
 \end{equation}
 
-For low $Q^2$, corresponding to the infrared regime, we can expand the vacuum polarisation function for $Q^2=0$,
+In the infrared regime, we can expand the vacuum polarisation function for $Q^2=0$,
 
 \begin{equation}
 \Pi(Q^2) = \Pi_0 + \sum_{n=1}^\infty \Pi_n Q^{2n},
-\end{equation}
-
-\noindent where $\Pi_0 \equiv \Pi(0)$ and $\Pi_n$ is the $n$'th expansion coefficient. Choosing $Q = (\omega, 0)$ as before, we find that 
-
-\begin{equation}
-\omega^2\Pi(\omega^2) = \int^\infty_{-\infty} dt\, e^{i\omega t} G(t)
-\end{equation}
-
-\noindent and the vacuum polarisation function is now modified as
-
-\begin{equation}
-\Pi(\omega^2) = \Pi_0 + \sum_{n=1}^\infty \Pi_n \omega^{2n},
 \label{hvpf expansion}
 \end{equation}
 
-We now define the time moment as
+\noindent where $\Pi_0 \equiv \Pi(0)$ and $\Pi_n$ is the $n$'th expansion coefficient. We now define the time moment as
+
+%Choosing $Q = (\omega, 0)$ as before, we find that Equation \ref{hvp - correlator} becomes 
+
+%\begin{equation}
+%\omega^2\Pi(\omega^2) = \int^\infty_{-\infty} dt\, e^{i\omega t} G(t)
+%\end{equation}
+%
+%\noindent and the vacuum polarisation function is now modified as
+%
+%\begin{equation}
+%\Pi(\omega^2) = \Pi_0 + \sum_{n=1}^\infty \Pi_n \omega^{2n},
+%\end{equation}
 
 \begin{equation}
 G_{2n} = \int^\infty_{-\infty} dt \, t^{2n} G(t).
 \end{equation}
 
-In light of the quantities we prepared prior to the definition, we establish the following relation,
+In light of the Equation \ref{hvp - correlator}, we establish the following relation,
 
-\begin{equation}
-\begin{split}
+\begin{align*}
 G_{2n} &= \int^\infty_{-\infty} dt \, t^{2n} G(t),\\
-&=  \int^\infty_{-\infty} dt \, (i)^{2n} \frac{\partial^{2n}}{\partial \omega^{2n}} e^{i\omega t} \bigg \vert_{\omega=0} G(t),\\
-&=  (-1)^{n} \frac{\partial^{2n}}{\partial \omega^{2n}}\int^\infty_{-\infty} dt \,  e^{i\omega t} G(t) \bigg \vert_{\omega=0} ,\\
-G_{2n}&=  (-1)^{n} \frac{\partial^{2n}}{\partial \omega^{2n}} \omega^2 \Pi(\omega^2)\bigg \vert_{\omega=0} ,\\
-\end{split}
-\end{equation}
+&=  (-i)^{2n} \frac{\partial^{2n}}{\partial \omega^{2n}}\int^\infty_{-\infty} dt \,  e^{i\omega t} G(t) \bigg \vert_{\omega=0} ,\\
+G_{2n}&=  (-1)^{n} \frac{\partial^{2n}}{\partial \omega^{2n}} \omega^2 \Pi(\omega^2)\bigg \vert_{\omega=0} ,
+\tag{\refstepcounter{equation}\theequation}
+\end{align*}
 
-Together with Equation \ref{hvpf expansion}, we can express the time moments in terms of the vacuum polarisation function at low $\omega^2$:
+Together with Equation \ref{hvpf expansion} and choosing $Q=(\omega,0)$ as before, we can express the time moments in terms of the vacuum polarisation function at low $\omega^2$:
 
 \begin{equation}
 \begin{split}
@@ -1070,23 +1034,36 @@ G_{2n}&=  (-1)^{n} \frac{\partial^{2n}}{\partial \omega^{2n}} (\omega^2 \Pi_0 + 
 
 Let us compute the first few orders of $n$,
 
-\begin{equation}
-\begin{split}
-\mathrm{for}\, n=1,&\\
-G_2 &= -\frac{\partial^{2}}{\partial \omega^{2}} (\omega^2 \Pi_0 + \sum_{m=1}^\infty \Pi_m \omega^{2m+2})\bigg \vert_{\omega=0} ,\\
-&= -(2\Pi_0 + \sum_{m=1}^\infty (2m+2)(2m+1)\Pi_m \omega^{2m})\bigg \vert_{\omega=0} ,\\
-\label{pi0g2}\Rightarrow \Pi_0 &= -\frac{1}{2}G_2,
-\end{split}
-\end{equation}
-\begin{equation}
-\begin{split}
-\mathrm{for}\, n=2,&\\
-G_4 &= (-1)^2\frac{\partial^{4}}{\partial \omega^{4}} (\omega^2 \Pi_0 + \sum_{m=1}^\infty \Pi_m \omega^{2m+2})\bigg \vert_{\omega=0} ,\\
-&=  \frac{\partial^{4}}{\partial \omega^{4}}(\Pi_1 \omega^{4} + \Pi_2 \omega^{6} + \mathcal{O}(\omega^8))\bigg \vert_{\omega=0} ,\\
-&= 4!\Pi_1 + 6\cdot 5\cdot 4\cdot 3\Pi_2 \omega^{2} + \mathcal{O}(\omega^4))\bigg \vert_{\omega=0} ,\\
+%\begin{equation}
+%\begin{split}
+%\mathrm{for}\, n=1,&\\
+%G_2 &= -\frac{\partial^{2}}{\partial \omega^{2}} (\omega^2 \Pi_0 + \sum_{m=1}^\infty \Pi_m \omega^{2m+2})\bigg \vert_{\omega=0} ,\\
+%&= -(2\Pi_0 + \sum_{m=1}^\infty (2m+2)(2m+1)\Pi_m \omega^{2m})\bigg \vert_{\omega=0} ,\\
+%\label{pi0g2}\Rightarrow \Pi_0 &= -\frac{1}{2}G_2,
+%\end{split}
+%\end{equation}
+%\begin{equation}
+%\begin{split}
+%\mathrm{for}\, n=2,&\\
+%G_4 &= (-1)^2\frac{\partial^{4}}{\partial \omega^{4}} (\omega^2 \Pi_0 + \sum_{m=1}^\infty \Pi_m \omega^{2m+2})\bigg \vert_{\omega=0} ,\\
+%&=  \frac{\partial^{4}}{\partial \omega^{4}}(\Pi_1 \omega^{4} + \Pi_2 \omega^{6} + \mathcal{O}(\omega^8))\bigg \vert_{\omega=0} ,\\
+%&= 4!\Pi_1 + 6\cdot 5\cdot 4\cdot 3\Pi_2 \omega^{2} + \mathcal{O}(\omega^4))\bigg \vert_{\omega=0} ,\\
+%\Rightarrow \Pi_1 &= \frac{1}{4!}G_4,
+%\end{split}
+%\end{equation}
+
+\begin{align}
+\mathrm{for}\, n=1,&\nonumber\\
+G_2 &= -\frac{\partial^{2}}{\partial \omega^{2}} (\omega^2 \Pi_0 + \sum_{m=1}^\infty \Pi_m \omega^{2m+2})\bigg \vert_{\omega=0} ,\nonumber\\
+&= -(2\Pi_0 + \sum_{m=1}^\infty (2m+2)(2m+1)\Pi_m \omega^{2m})\bigg \vert_{\omega=0} ,\nonumber\\
+\Rightarrow \Pi_0 &= -\frac{1}{2}G_2,\nonumber\\
+\mathrm{for}\, n=2,&\nonumber\\
+G_4 &= (-1)^2\frac{\partial^{4}}{\partial \omega^{4}} (\omega^2 \Pi_0 + \sum_{m=1}^\infty \Pi_m \omega^{2m+2})\bigg \vert_{\omega=0} ,\nonumber\\
+&=  \frac{\partial^{4}}{\partial \omega^{4}}(\Pi_1 \omega^{4} + \Pi_2 \omega^{6} + \mathcal{O}(\omega^8))\bigg \vert_{\omega=0} ,\nonumber\\
+&= 4!\Pi_1 + 6\cdot 5\cdot 4\cdot 3\Pi_2 \omega^{2} + \mathcal{O}(\omega^4))\bigg \vert_{\omega=0} ,\nonumber\\
 \Rightarrow \Pi_1 &= \frac{1}{4!}G_4,
-\end{split}
-\end{equation}
+\label{pi0g2}
+\end{align}
 
 \noindent and similarly for $n=3$, we have
 \begin{equation}
@@ -1153,7 +1130,7 @@ For completeness, we note that lattice calculations of $a_\mu^\mathrm{HVP}$ can 
 
 \noindent where $s$ is the centre-of-mass energy squared and we have specialised the cross section to have hadronic final states. Using experimental data for the cross section, this method produces $a_\mu^\mathrm{HVP}=6923(42)(3)\times 10^{-11}$, where the first error is due to systematic uncertainties and the second is due to perturbative QCD at intermediate and large energy regime\cite{hoecker}.
 
-On the other hand, when we use the two lattice approaches derived above, we independently get\cite{dellamorte}
+On the other hand, when we use the two lattice approaches derived above, we obtain\cite{dellamorte}
 
 \begin{equation}
 \begin{split}
