@@ -1,0 +1,153 @@
+\begin{thebibliography}{10}
+
+\bibitem{lehnerg2}
+F.~Jegerlehner and A.~Nyffeler, ``{The Muon g-2},'' {\em Phys. Rept.},
+  vol.~477, pp.~1--110, 2009.
+
+\bibitem{hoecker}
+A.~Hoecker and W.~Marciano, ``{The Muon Anomalous Magnetic Moment},'' {\em
+  Rept. Prog. Phys}, vol.~70, p.~795, 2007.
+
+\bibitem{fermilab}
+I.~Logashenko {\em et~al.}, ``{The Measurement of the Anomalous Magnetic Moment
+  of the Muon at Fermilab},'' {\em Journal of Physical and Chemical Reference
+  Data}, vol.~44, no.~3, p.~031211, 2015.
+\newblock \url{https://doi.org/10.1063/1.4917553}.
+
+\bibitem{millerg2}
+J.~P. Miller, E.~de~Rafael, and B.~L. Roberts, ``{Muon (g-2): Experiment and
+  Theory},'' {\em Rept. Prog. Phys.}, vol.~70, p.~795, 2007.
+
+\bibitem{phipps}
+T.~E. Phipps and J.~B. Taylor, ``{The Magnetic Moment of the Hydrogen Atom},''
+  {\em Phys. Rev.}, vol.~29, pp.~309--320, Feb 1927.
+\newblock \url{https://link.aps.org/doi/10.1103/PhysRev.29.309}.
+
+\bibitem{zee}
+A.~Zee, {\em {Quantum Field Theory in a Nutshell}}.
+\newblock Nutshell Handbook, Princeton, NJ: Princeton Univ. Press, 2003.
+
+\bibitem{bnl}
+G.~W. Bennett {\em et~al.}, ``{Final Report of the Muon E821 Anomalous Magnetic
+  Moment Measurement at BNL},'' {\em Phys. Rev.}, vol.~D73, p.~072003, 2006.
+
+\bibitem{sm}
+C.~E. Thomas, ``{The Standard Model}.'' Mathematical Tripos Lent Lecture Notes,
+  2018.
+
+\bibitem{muon_hyperfine}
+W.~Liu {\em et~al.}, ``{High Precision Measurements of the Ground State
+  Hyperfine Structure Interval of Muonium and of the Muon Magnetic Moment},''
+  {\em Phys. Rev. Lett.}, vol.~82, pp.~711--714, Jan 1999.
+\newblock \url{https://link.aps.org/doi/10.1103/PhysRevLett.82.711}.
+
+\bibitem{pdg}
+C.~Patrignani {\em et~al.}, ``{Review of Particle Physics},'' {\em Chin.
+  Phys.}, vol.~C40, no.~10, p.~100001, 2016.
+
+\bibitem{aoyama}
+T.~Aoyama, M.~Hayakawa, T.~Kinoshita, and M.~Nio, ``Complete tenth-order qed
+  contribution to the muon $g\mathbf{\ensuremath{-}}2$,'' {\em Phys. Rev.
+  Lett.}, vol.~109, p.~111808, Sep 2012.
+\newblock \url{https://link.aps.org/doi/10.1103/PhysRevLett.109.111808}.
+
+\bibitem{schwinger}
+J.~Schwinger, ``{On Quantum-Electrodynamics and the Magnetic Moment of the
+  Electron},'' {\em Phys. Rev.}, vol.~73, pp.~416--417, Feb 1948.
+
+\bibitem{codata}
+P.~J. {Mohr}, B.~N. {Taylor}, and D.~B. {Newell}, ``{CODATA recommended values
+  of the fundamental physical constants: 2010},'' {\em Reviews of Modern
+  Physics}, vol.~84, pp.~1527--1605, Oct. 2012.
+
+\bibitem{gnendiger}
+C.~Gnendiger, D.~St\"ockinger, and H.~St\"ockinger-Kim, ``The electroweak
+  contributions to
+  $\mathbf{(}g\mathbf{\ensuremath{-}}2{\mathbf{)}}_{\ensuremath{\mu}}$ after
+  the higgs-boson mass measurement,'' {\em Phys. Rev. D}, vol.~88, p.~053005,
+  Sep 2013.
+\newblock \url{https://link.aps.org/doi/10.1103/PhysRevD.88.053005}.
+
+\bibitem{particle_review}
+J.~Beringer {\em et~al.}, ``{Review of Particle Physics},'' {\em Phys. Rev. D},
+  vol.~86, p.~010001, Jul 2012.
+\newblock \url{https://link.aps.org/doi/10.1103/PhysRevD.86.010001}.
+
+\bibitem{lattice}
+C.~Gattringer and C.~B. Lang, ``{Quantum Chromodynamics on the Lattice},'' {\em
+  Lect. Notes Phys.}, vol.~788, pp.~1--343, 2010.
+
+\bibitem{dellamorte}
+M.~Della~Morte, A.~Francis, V.~Gülpers, G.~Herdoíza, G.~von Hippel, H.~Horch,
+  B.~Jäger, H.~B. Meyer, A.~Nyffeler, and H.~Wittig, ``{The Hadronic Vacuum
+  Polarization Contribution to the Muon $g-2$ from Lattice QCD},'' {\em JHEP},
+  vol.~10, p.~020, 2017.
+
+\bibitem{blum}
+T.~Blum, N.~Christ, M.~Hayakawa, T.~Izubuchi, L.~Jin, and C.~Lehner, ``{Lattice
+  Calculation of Hadronic Light-by-Light Contribution to the Muon Anomalous
+  Magnetic Moment},'' {\em Phys. Rev. D}, vol.~93, p.~014503, Jan 2016.
+\newblock \url{https://link.aps.org/doi/10.1103/PhysRevD.93.014503}.
+
+\bibitem{vector}
+D.~Bernecker and H.~B. Meyer, ``{Vector Correlators in Lattice QCD: Methods and
+  applications},'' {\em Eur. Phys. J.}, vol.~A47, p.~148, 2011.
+
+\bibitem{bessel}
+E.~W. Weisstein, ``{Modified Bessel Function of the Second Kind}.''
+  \url{http://mathworld.wolfram.com/ModifiedBesselFunctionoftheSecondKind.html}.
+\newblock From MathWorld - A Wolfram Web Resource.
+
+\bibitem{laplace}
+E.~W. Weisstein, ``{Laplace Transform}.''
+  \url{http://mathworld.wolfram.com/LaplaceTransform.html}.
+\newblock From MathWorld - A Wolfram Web Resource.
+
+\bibitem{reflection}
+E.~W. Weisstein, ``{Reflection Relation}.''
+  \url{http://mathworld.wolfram.com/ReflectionRelation.html}.
+\newblock From MathWorld - A Wolfram Web Resource.
+
+\bibitem{bessel1}
+E.~W. Weisstein, ``{Modified Bessel Function of the First Kind}.''
+  \url{http://mathworld.wolfram.com/ModifiedBesselFunctionoftheFirstKind.html}.
+\newblock From MathWorld - A Wolfram Web Resource.
+
+\bibitem{digamma}
+E.~W. Weisstein, ``{Digamma Function}.''
+  \url{http://mathworld.wolfram.com/DigammaFunction.html}.
+\newblock From MathWorld - A Wolfram Web Resource.
+
+\bibitem{euler-mascheroni}
+E.~W. Weisstein, ``{Euler-Mascheroni Constant}.''
+  \url{http://mathworld.wolfram.com/Euler-MascheroniConstant.html}.
+\newblock From MathWorld - A Wolfram Web Resource.
+
+\bibitem{pade}
+M.~Lotz, ``{Pad\'{e} Approximation}.'' \url{https://na2.org/lectures/}.
+\newblock Numerical Analysis 2 Lecture Notes.
+
+\bibitem{pade2}
+M.~Barnsley, ``The bounding properties of the multipoint padé approximant to a
+  series of stieltjes on the real line,'' {\em Journal of Mathematical
+  Physics}, vol.~14, no.~3, pp.~299--313, 1973.
+
+\bibitem{jackson}
+J.~Jackson, {\em Classical electrodynamics}.
+\newblock New York: Wiley, 1999.
+
+\bibitem{tong}
+D.~Tong, ``{Quantum Field Theory}.'' Mathematical Tripos Michaelmas Lecture
+  Notes, 2018.
+
+\bibitem{antiperiodic}
+H.~Murayama, ``{Quantum Field Theory II: Fermi Systems}.''
+  \url{http://hitoshi.berkeley.edu/}.
+\newblock 221B Spring Lecture Notes.
+
+\bibitem{vainshtein}
+K.~Melnikov and A.~Vainshtein, ``{Hadronic Light-by-Light Scattering
+  Contribution to the Muon Anomalous Magnetic Moment Reexamined},'' {\em Phys.
+  Rev. D}, vol.~70, p.~113006, Dec 2004.
+
+\end{thebibliography}

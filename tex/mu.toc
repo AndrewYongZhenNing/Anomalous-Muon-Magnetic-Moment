@@ -1,0 +1,15 @@
+\contentsline {section}{\numberline {1}Introduction}{2}{section.1}
+\contentsline {section}{\numberline {2}g-2: A Brief History}{2}{section.2}
+\contentsline {section}{\numberline {3}Experimental Measurements}{3}{section.3}
+\contentsline {section}{\numberline {4}Theory - Standard Model Predictions}{5}{section.4}
+\contentsline {subsection}{\numberline {4.1}QED Contributions}{5}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Electroweak Contributions}{7}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Hadronic Contributions - Preamble}{9}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Hadronic Vacuum Polarisation Contributions}{10}{subsection.4.4}
+\contentsline {subsubsection}{\numberline {4.4.1}Time Momentum Representation}{13}{subsubsection.4.4.1}
+\contentsline {subsubsection}{\numberline {4.4.2}Time Moments and Pad\'{e} Approximants}{24}{subsubsection.4.4.2}
+\contentsline {subsection}{\numberline {4.5}Hadronic Light-by-Light Contribution}{29}{subsection.4.5}
+\contentsline {subsubsection}{\numberline {4.5.1}Exact Photon Propogators}{33}{subsubsection.4.5.1}
+\contentsline {subsubsection}{\numberline {4.5.2}Obtaining $q^2=0$ in Finite Volume}{34}{subsubsection.4.5.2}
+\contentsline {section}{\numberline {5}Conclusion}{39}{section.5}
+\contentsline {section}{References}{42}{section*.6}
